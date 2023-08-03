@@ -1,11 +1,11 @@
 const questions =[
     { questionId : 1,
         question : "Who is the father of our nation?",
-        option1 : "Mahatma gandhi",
+        option1 : "Mahatma Gandhi",
         option2 : "Jawaharlal Nehru",
         option3 : "Donal Trump",
         option4 : "Barrack Obama",
-        answer : "Mahatma gandhi"},
+        answer : "Mahatma Gandhi"},
     {
         questionId : 2,
         question : "What color is are the leaves ?",
