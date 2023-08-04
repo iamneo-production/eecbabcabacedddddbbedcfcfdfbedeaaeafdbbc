@@ -19,7 +19,7 @@ function App() {
           setShowBanner(false);
           setCorrectAnswers(0);
           setIsTotalAttempted(0);
-        }}>"Start Quiz"</Button>}
+        }}>Start Quiz</Button>}
         {
             isQuizStarted && data.map(item => {
               return (
