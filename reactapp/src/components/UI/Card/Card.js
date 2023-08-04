@@ -1,25 +1,15 @@
-import {useState} from 'react';
+import './Card.css';
+import Button from "../Button/Button";
 
-const Card = ({question, correctAnswerMarkUpdate, attempt, options, answer})=>{
-const [isDisabled, setIsDisabled] = useState(false);
-    const onButtonClick=(e)=>{
-        if(e.target.tagName==="BUTTON"){
-            setIsDisabled(true);
-            if(e.target.innerText === answer){
-                correctAnswerMarkUpdate();
-            }
-            attempt();
-        }
-    }
-    return (
-        <div className="container" onClick={onButtonClick}>
-            <h4 >{question}</h4> 
-            <button disabled={isDisabled}>{options.option1}</button>
-            <button disabled={isDisabled}>{options.option2}</button>
-            <button disabled={isDisabled}>{options.option3}</button>
-            <button disabled={isDisabled}>{options.option4}</button>
-        </div>
-    )
-    }
+const Card = (props) => {
+    return <div className="card" id={props.id}>
+        <h4>{props.question}</h4>
+        
+        <Button handler={props.attempt} disabledState={props.isDisabled} value={props.options.option1}>{props.options.option1}</Button>
+        <Button handler={props.attempt} disabledState={props.isDisabled} value={props.options.option2}>{props.options.option2}</Button>
+        <Button handler={props.attempt} disabledState={props.isDisabled} value={props.options.option3}>{props.options.option3}</Button>
+        <Button handler={props.attempt} disabledState={props.isDisabled} value={props.options.option4}>{props.options.option4}</Button>
+    </div>;
+};
 
-export default Card;
+export default Card;
