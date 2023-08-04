@@ -1,6 +1,6 @@
 const questions =[
     { questionId : 1,
-        question : "Who is the father of our nation?",
+        question : "Who is the father of our nation ?",
         option1 : "Mahatma Gandhi",
         option2 : "Jawaharlal Nehru",
         option3 : "Donald Trump",
