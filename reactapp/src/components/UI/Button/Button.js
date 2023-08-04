@@ -1,7 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-const Button = (props)=>{
-  return <button onClick={props.onClick}>{props.children}</button>
+const Button = ({children, onClick, disabled}) => {
+  return (
+    <button onClick = {onClick} disabled = {disabled}>{children}</button>
+  )
 }
 
 export default Button;
