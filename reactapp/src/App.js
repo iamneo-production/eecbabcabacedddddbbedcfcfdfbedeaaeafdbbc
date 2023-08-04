@@ -48,7 +48,7 @@ function App() {
                 setShowBanner(true);
                 setisQuizStarted(false);
                 setIsTotalAttempted(0);
-            }}>"Show Results"</Button>
+            }}>Show Results</Button>
           }
           {
             showBanner && <Banner correctAnswered={correctAnswers}/>
