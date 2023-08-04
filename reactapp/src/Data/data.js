@@ -1,5 +1,6 @@
 const questions =[
-    { questionId : 1,
+    { 
+        questionId : 1,
         question : "Who is the father of our nation ?",
         option1 : "Mahatma Gandhi",
         option2 : "Jawaharlal Nehru",
@@ -13,23 +14,25 @@ const questions =[
         option2 : "Red",
         option3 : "Yellow",
         option4 : "Green",
-        answer : "Green"
-    },
-    { questionId : 3,
+        answer : "Green"},
+    { 
+        questionId : 3,
         question : "What color is the sky ?",
         option1 : "Blue",
         option2 : "Red",
         option3 : "Yellow",
         option4 : "Green",
         answer : "Blue"},
-    { questionId : 4,
+    { 
+        questionId : 4,
         question : "What color is the sky ?",
         option1 : "Blue",
         option2 : "Red",
         option3 : "Yellow",
         option4 : "Green",
         answer : "Blue"},
-    { questionId : 5,
+    { 
+        questionId : 5,
         question : "What color is the fire ?",
         option1 : "Blue",
         option2 : "Red",
